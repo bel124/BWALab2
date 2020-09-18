@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Lab Two</title>
-    <script scr="lab2.js"></script>
+    <script src="lab2.js"></script>
 </head>
 <body>
-<p id="combo">In today's lab, we will be integrating JavaScript into HTML code.</p>
+<p id="combo"> In today's lab, we will be integrating JavaScript into HTML code.</p>
 
-<button onclick="modifyInto();">modify</button>
-
-
+<button type="button"
+        onclick="modifyInto();">modify</button>
 </body>
+
+<br>
+<br>
+
+<form>
+    Please insert a number between 10 and 15:<br>
+    <input type="text" id="number" name="number">
+    <button type="button"
+            onclick="validate();">Modify</button>
+    <br>
+    <p id="output"></p>
+</form>
 </html>
